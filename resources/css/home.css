@@ -1,5 +1,5 @@
 .home {
-    background-color:rgb(69, 20, 147);
+    background-color:rgb(188, 145, 175);
     z-index: 2;
 }
 
@@ -65,18 +65,18 @@ button:hover {
 .content-for-home .img-container {
     width: 1350px;
     height: 850px;
-    background: url("C:\Users\USER\Desktop\sivani\guard\Guardians1-1\resources\img\graphics_design.jpg");
+    background: url("resources\img\scans\childrennnnnnn.jpg");
     background-position: center;
     background-size: cover;
     font-style: inherit;
     font-size: 30px;
-    color: indigo;
+    color: rgb(114, 5, 96);
 }
 
 .content-for-home .img-container .logo {
     width: 50px;
     height: 50px;
-    background: url("C:\Users\USER\Desktop\sivani\guard\Guardians1-1\resources\img\graphics_design.jpg");
+    background: url("resources\img\scans\childrennnnnnn.jpg");
     background-position: top;
     background-position: center;
     background-size: cover;
@@ -273,7 +273,7 @@ button:hover {
     .content-for-home .img-container {
         width: 50px;
         height: 50px;
-        background: url("C:\Users\USER\Desktop\sivani\guard\Guardians1-1\resources\img\graphics_design.jpg") no-repeat top left;
+        background: url("resources\img\scans\childrennnnnnn.jpg") no-repeat top left;
         background-size: cover;
     }
 }
@@ -410,7 +410,7 @@ button:hover {
     .content-for-home .img-container {
         width: 50px;
         height: 50px;
-        background: url("C:\Users\USER\Desktop\sivani\guard\Guardians1-1\resources\img\graphics_design.jpg") no-repeat top left;
+        background: url("resources\img\scans\childrennnnnnn.jpg") no-repeat top left;
         background-size: cover;
     }
 }
