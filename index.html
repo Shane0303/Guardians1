@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Made changes" />
+        <title>Nurture</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/predictor.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/pregnency women2.jpg"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                Nurture
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">Home</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >About</a
+                    >
+                </li>
+                <li><a href="#" onclick="portfolio()">Journey</a></li>
+                <li><a href="#" onclick="services(); animate6.play();">Mental Health</a></li>
+                <li><a href="#" onclick="blog()">Articles</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">Contact</a>
+                </li>
+            </ul>
+            <br\>
+            <br\>
+            <br\>
+            <br\>
+            <div class ="end">
+            <p>&copy; 2023 Nuture.</p>
+            </div>
+        </nav>
+        
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="content-for-home">
+                        <div class="img-container">
+                          <h1 align="left">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nurture</h1>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <h3 style="color: lightcoral;">&nbsp  &nbsp &nbspWant to know if your fetus is at risk?</h3>  
+                          <h5 style="color: rgb(63, 133, 231)"> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbspUse our Maternity Risk Predictor to find out</h5>
+                          
+                          <button style="background-color:rgb(221, 63, 221); /* Green */border: none;color: white;padding: 12px 24px;text-align: center; text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px;cursor: pointer;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)" onclick="location.href='http://127.0.0.1:5000';">Check here</button>
+                
+                        </div>
+                        <div class="side-nav">
+                            <button
+                                onclick="about(); animate3.play(); animate4.play();"
+                            >
+                                <span class="w">M</span>
+                                <span class="tooltip">About</span>
+                            </button>
+                            <button onclick="portfolio()">
+                                <span class="w">A</span>
+                                <span class="tooltip">Journey</span>
+                            </button>
+                            <button onclick="services(); animate6.play();">
+                                <span class="w">M</span>
+                                <span class="tooltip">Mental Health</span>
+                            </button>
+                            <button onclick="blog()">
+                                <span class="w">A</span>
+                                <span class="tooltip">Articles</span>
+                            </button>
+                            <button onclick="contact(); animate5.play()">
+                                <span class="w">:></span>
+                                <span class="tooltip">Contact</span>
+                            </button>
+                        </div>
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <h1>Welcome to Nurture - A Caring Companion for Pregnancy</h1>
+                                <p class="text">
+                                    Welcome to our website, dedicated to providing support and guidance to pregnant women on their journey to motherhood. 
+                                    We understand that pregnancy can be a challenging and overwhelming time, filled with questions and uncertainties. 
+                                    That's why we're here to offer expert advice and resources to help you navigate this transformative experience. 
+                                    Our team of healthcare professionals are committed to providing evidence-based information and practical tips to help you feel confident and empowered throughout your pregnancy. 
+                                    We believe that every woman deserves access to quality information and resources to make informed decisions about her health and the health of her baby. 
+                                    Join our community today and let us support you on your journey to motherhood.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >Statistics</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">Experts</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- STATISTICS BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">Teen Pregnancy</div>
+                                <div class="value" style="left: 80%">14%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 14%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Pregnancy in Mid 20s</div>
+                                <div class="value" style="left: 80%">30%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 30%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Healthy Pregnancy</div>
+                                <div class="value" style="left: 80%">80%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Chromosomal Abnormality</div>
+                                <div class="value" style="left: 80%">1%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 1%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Abortion Rates</div>
+                                <div class="value" style="left: 80%">45%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 45%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Live Births</div>
+                                <div class="value" style="left: 80%">60%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 60%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Gynacologist</i>
+                                <h2>Dr Shane Rodrigues</h2>
+                                <i class="name_company">Tata Memorial Hospital</i>
+                                <article class="text_hidden">
+                                    Offers a whole pregnancy care package which includes Ultrasound Scanning, Pre-birth medication, Post-birth medication and checking of fetal abnormalities.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Psychologist</i>
+                                <h2>Dr Sharon Menezes</h2>
+                                <i class="name_company">Wellness Clinic</i>
+                                <article class="text_hidden">
+                                    Expert in Councelling and Treating Pre and Post Pregnancy Syndromes. Offers expert advice and tips on Mental Health during Pregnancy.
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer4">
+                <div class="services main">
+                    
+                    <div class="hero">
+                        <span class="typography">
+                            <span class="t_dummy">&nbsp Pregnancy is a process that teaches you </span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front"
+                                    >&nbsp patience</span
+                                >
+                                <span class="box-side box-top"
+                                    >&nbsp selflessness</span
+                                >
+                                <span class="box-side box-back"
+                                    >&nbsp and </span
+                                >
+                                <span class="box-side box-bottom"
+                                    >&nbsp endurance</span
+                                >
+                            </span>
+                        </span>
+                        <p class="hero-text">
+                            Congrats on your exciting news! Now that you’ve learned you’re expecting, there’s so much to keep track of during each stage of your pregnancy. Turn to our pregnancy articles and videos for everything you need to know about the next nine months and beyond.
+                        </p>
+                    </div>
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/m2.jpeg" alt="" />
+                        <p class="c_content">
+                            <span class="c_title">BE STRONG</span>
+                            It's normal to feel some worry during pregnancy, but there are things you can do to reduce it. Try to exercise for 30 minutes a day to reduce stress and get better sleep. Eating a healthy, balanced diet can also improve your mood and overall health. Taking daily antenatal vitamins is advised for all pregnant women. Take time to relax and unwind, whether it's a relaxing bath or a massage. Be honest with yourself about your worries and talk to your partner or other mothers about your concerns. Avoid reading unmoderated forums and seek advice from your healthcare provider if needed. Remember, you're not alone and many other mothers have worried about the same things before you.
+                            <br/>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="capabilities right">
+                        <p class="c_content">
+                            <span class="c_title">RELAX</span>
+                            It's important to look after your mental health during pregnancy, as there can be a lot of new information to take in that can cause anxiety or stress. To stay calm, try deep breathing exercises or writing down your concerns and worries in the morning, followed by three things you're grateful for. Talking to friends, family, or a healthcare professional can also help. It's also important to take a break from negative news by limiting your exposure and focusing on positive news instead. Choose a specific time of day to catch up on the latest headlines or good news stories. Remember, taking care of your mental health is just as important as your physical health during pregnancy.
+                            <br />
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                        <img
+                            src="resources/img/m3.JPG"
+                            alt=""
+                        />
+                    </div>
+                    <div class="capabilities left">
+                        <img
+                            src="resources/img/m1.JPG"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+                        <p class="c_content">
+                            <span class="c_title">FEEL LOVED</span>
+                            Experiencing anxiety during pregnancy is normal, even if you've never had it before. Worries about the baby's health, parenting skills, and labor experience are common. While it's healthy to go through these thoughts, you don't have to endure anxiety throughout your pregnancy. Talking to someone about your concerns and considering counseling if your anxiety is severe can help you work through the sources of your stress. Remember, every pregnant woman goes through some level of anxiety, and it's a sign that you're taking this major life change seriously.
+                            <br />
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Wedding Couple</h1>
+                                        <span
+                                            >Category:
+                                            <span style="color: #999"
+                                                >Web Design</span
+                                            ></span
+                                        >
+                                    </div>
+                                    <div class="other_text">
+                                        <h2>Info:</h2>
+                                        <p
+                                            class="pro_brief"
+                                            style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            "
+                                        >
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. At
+                                            corrupti modi perferendis iure
+                                            corporis dolores minus asperiores
+                                            nemo debitis veritatis id placeat,
+                                            similique eum recusandae ipsa quia
+                                            cum earum nam?
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. At
+                                            corrupti modi perferendis iure
+                                            corporis dolores minus asperiores
+                                            nemo debitis veritatis id placeat,
+                                            similique eum recusandae ipsa quia
+                                            cum earum nam?
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. At
+                                            corrupti modi perferendis iure
+                                            corporis dolores minus asperiores
+                                            nemo debitis veritatis id placeat,
+                                            similique eum recusandae ipsa quia
+                                            cum earum nam?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2>Details</h2>
+                                    <p class="Date">
+                                        <b>Date: </b>
+                                        <span style="color: #999">2020</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>Client: </b>
+                                        <span style="color: #999">xyz</span>
+                                    </p>
+                                    <p>
+                                        <b>Tools: </b>
+                                        <span style="color: #999"
+                                            >HTML, CSS, JavaScript</span
+                                        >
+                                    </p>
+                                    <p class="link">
+                                        <b>Web: </b>
+                                        <span style="color: #999"
+                                            ><a href="#"
+                                                >www.domain.com</a
+                                            ></span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span>Click Here</span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a class="filter" href="#" data-filter=".web"
+                                    >Weeks</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".logo"
+                                    >Diet Plan</a
+                                >
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".card"
+                                    >Exercise</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s1.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 1</span>
+                            <span class="port_link">Length: 0 mm<br>Weight: 0 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s2.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 2</span>
+                            <span class="port_link">Length: 0 mm<br>Weight: 0 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s3.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 3</span>
+                            <span class="port_link">Length: 0 mm<br>Weight: 0 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s4.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 4</span>
+                            <span class="port_link">Length: 0 mm<br>Weight: 0 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s5.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 5</span>
+                            <span class="port_link">Length: 2 mm<br>Weight: 0 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s6.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 6</span>
+                            <span class="port_link">Length: 6 mm<br>Weight: 0.2 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s7.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 7</span>
+                            <span class="port_link">Length: 1.3 mm<br>Weight: 0.5 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s8.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 8</span>
+                            <span class="port_link">Length: 1.6 mm<br>Weight: 1 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s9.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 9</span>
+                            <span class="port_link">Length: 2.3 mm<br>Weight: 2 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s10.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 10</span>
+                            <span class="port_link">Length: 3.1 mm<br>Weight: 4 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s11.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 11</span>
+                            <span class="port_link">Length: 4.1 mm<br>Weight: 7 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s12.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 12</span>
+                            <span class="port_link">Length: 5.4 mm<br>Weight: 14 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s13.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 13</span>
+                            <span class="port_link">Length: 7.4 mm<br>Weight: 23 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s14.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 14</span>
+                            <span class="port_link">Length: 8.7 mm<br>Weight: 43 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s15.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 15</span>
+                            <span class="port_link">Length: 10.1 mm<br>Weight: 70 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s16.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 16</span>
+                            <span class="port_link">Length: 11.6 mm<br>Weight: 100 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s17.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 17</span>
+                            <span class="port_link">Length: 13 mm<br>Weight: 140 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s18.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 18</span>
+                            <span class="port_link">Length: 14.2 mm<br>Weight: 190 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s19.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 19</span>
+                            <span class="port_link">Length: 15.3 mm<br>Weight: 240 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s20.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 20</span>
+                            <span class="port_link">Length: 25.6 mm<br>Weight: 300 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s21.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 21</span>
+                            <span class="port_link">Length: 26.7 mm<br>Weight: 360 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s22.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 22</span>
+                            <span class="port_link">Length: 27.8 mm<br>Weight: 430 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s23.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 23</span>
+                            <span class="port_link">Length: 28.9 mm<br>Weight: 501 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s24.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 24</span>
+                            <span class="port_link">Length: 30 mm<br>Weight: 600 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s25.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 25</span>
+                            <span class="port_link">Length: 34.6 mm<br>Weight: 660 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s26.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 26</span>
+                            <span class="port_link">Length: 35.6 mm<br>Weight: 760 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s27.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 27</span>
+                            <span class="port_link">Length: 36.6 mm<br>Weight: 875 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s28.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 28</span>
+                            <span class="port_link">Length: 37.6 mm<br>Weight: 1.01 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s29.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 29</span>
+                            <span class="port_link">Length: 38.6 mm<br>Weight: 1.15 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s30.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 30</span>
+                            <span class="port_link">Length: 39.9 mm<br>Weight: 1.32 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s31.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 31</span>
+                            <span class="port_link">Length: 41.1 mm<br>Weight: 1.5 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s32.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 32</span>
+                            <span class="port_link">Length: 42.4 mm<br>Weight: 1.7 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s33.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 33</span>
+                            <span class="port_link">Length: 43.7 mm<br>Weight: 1.92 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s34.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 34</span>
+                            <span class="port_link">Length: 45 mm<br>Weight: 2.15 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s35.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 35</span>
+                            <span class="port_link">Length: 46.2 mm<br>Weight: 2.38 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s36.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 36</span>
+                            <span class="port_link">Length: 47.4 mm<br>Weight: 2.62 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s37.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 37</span>
+                            <span class="port_link">Length: 48.6 mm<br>Weight: 2.86 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s38.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 38</span>
+                            <span class="port_link">Length: 49.8 mm<br>Weight: 3.08 g</span>
+                        </div>
+                        <div class="mix web">
+                            <img
+                                src="resources\img\scans\s39.JPG"
+                                alt=""
+                            />
+                            <span class="title">Week 39</span>
+                            <span class="port_link">Length: 50.7 mm<br>Weight: 3.29 g</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6981.jpg"
+                                alt=""
+                            />
+                            <span class="title">Monday</span>
+                            <span class="port_link">
+                                Breakfast: Oatmeal<br>
+                                Lunch: Grilled chicken salad<br>
+                                Dinner: Baked salmon</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6980.jpg"
+                                alt=""
+                            />
+                            <span class="title">Tuesday</span>
+                            <span class="port_link">
+                                Breakfast: Whole grain toast<br>
+                                Lunch: Turkey and cheese wrap<br>
+                                Dinner: Beef stir-fry with brown rice</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6979.jpg"
+                                alt=""
+                            />
+                            <span class="title">Wednesday</span>
+                            <span class="port_link">
+                                Breakfast: Greek yogurt with granola<br>
+                                Lunch: Grilled cheese sandwic<br>
+                                Dinner: Pork tenderloin with sweet potato</span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6978.jpg"
+                                alt=""
+                            />
+                            <span class="title">Thursday</span>
+                            <span class="port_link">
+                                Breakfast: Whole grain waffles<br>
+                                Lunch: Lentil soup with whole grains<br>
+                                Dinner: Baked chicken with sweet potato </span>
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6977.jpg"
+                                alt=""
+                            />
+                            <span class="title">Friday</span>
+                            <span class="port_link">
+                                Breakfast: Smoothie with yogut<br>
+                                Lunch: Tuna salad with whole grains<br>
+                                Dinner: Whole grain pasta with tomato</span>
+
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\scans\IMG-6976.jpg"
+                                alt=""
+                            />
+                            <span class="title">Saturday</span>
+                            <span class="port_link">
+                                Breakfast: Scrambled eggs with toast<br>
+                                Lunch: Vegetable and bean burrito <br>
+                                Dinner: Grilled shrimp with brown rice
+                                  </span>
+
+                                
+                        </div>
+                        <div class="mix logo">
+                            <img
+                                src="resources\img\w5.jpg"
+                                alt=""
+                            />
+                            <span class="title">Sunday</span>
+                            <span class="port_link"> 
+                                Breakfast: Breakfast burrito with eggs<br>
+                                Lunch: Whole grain pita with veggies<br>
+                                Dinner: Grilled steak with roasted potatoes<br>
+                            </span>
+
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e1.jpg"
+                                alt=""
+                            />
+                            <span class="title">Monday</span>
+                            <span class="port_link">Pelvic tilts</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e2.jpg"
+                                alt=""
+                            />
+                            <span class="title">Tuesday</span>
+                            <span class="port_link">Kegel exercises</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e3.jpg"
+                                alt=""
+                            />
+                            <span class="title">Wednesday</span>
+                            <span class="port_link">Squats</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e4.jpg"
+                                alt=""
+                            />
+                            <span class="title">Thursday</span>
+                            <span class="port_link">Wall push-ups</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e5.jpg"
+                                alt=""
+                            />
+                            <span class="title">Friday</span>
+                            <span class="port_link">Swimming</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e6.JPG"
+                                alt=""
+                            />
+                            <span class="title">Saturday</span>
+                            <span class="port_link">Walking</span>
+                        </div>
+                        <div class="mix card">
+                            <img
+                                src="resources/img/scans/e7.JPG"
+                                alt=""
+                            />
+                            <span class="title">Sunday</span>
+                            <span class="port_link">Yoga</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>Essential Short Articles of Tips on Pregnancy</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h4>Breastfeeding</h4>
+                                <p>
+                                    During pregnancy, it's important to be aware of what foods and drinks to avoid or limit. Some of the things to avoid include undercooked or raw meat, unpasteurised soft cheeses, unpasteurised milk and juice, raw eggs, fish with mercury, raw fish and shellfish, and pre-stuffed meat. These foods can be contaminated with harmful bacteria or contain high levels of mercury, which can be dangerous for the developing baby. It's important to talk to your healthcare provider if you have any concerns about your diet during pregnancy
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>Pre-labour to do list</h4>
+                                <p>
+                                    As you near the end of your pregnancy, there are a few things to add to your pre-labour to-do list. First, be sure to familiarize yourself with the signs of labour, such as contractions and the loss of the mucus plug or clear fluid. Pack your hospital bag with essentials for yourself and your baby, including clothes and diapers. If you have other children, arrange for childcare. Stock up on supplies for your baby's nursery and fill your pantry and freezer with easy-to-reheat meals. Finally, make sure to rest and conserve your energy for the big day.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>Stay active during pregnancy</h4>
+                                <p>
+                                    Staying active during pregnancy has numerous benefits, from improving your mood to preparing you for labor. Regular exercise can help maintain a feeling of well-being, release endorphins, and strengthen muscles that support the added weight of the growing baby. It can also reduce the chances of developing health issues such as constipation, hemorrhoids, and varicose veins, as well as improve circulation and battle fatigue. Joining an exercise class is a great way to learn exercises that target specific areas of the body that need attention during pregnancy, while also meeting other pregnant women and making friends. Finally, exercise during pregnancy can have long-term positive effects, such as making it easier to lose weight post-delivery.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>What not to eat during pregnancy</h4>
+                                <p>
+                                    During pregnancy, it's important to be aware of what foods and drinks to avoid or limit. Some of the things to avoid include undercooked or raw meat, unpasteurised soft cheeses, unpasteurised milk and juice, raw eggs, fish with mercury, raw fish and shellfish, and pre-stuffed meat. These foods can be contaminated with harmful bacteria or contain high levels of mercury, which can be dangerous for the developing baby. It's important to talk to your healthcare provider if you have any concerns about your diet during pregnancy.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h4>When to call the doctor</h4>
+                                <p>
+                                    The list of symptoms during pregnancy that require medical attention includes bleeding accompanied by pain or other symptoms, fever not associated with cold or flu, itching with dark urine and yellowing of the skin, pain during urination with cloudy, bad-smelling, or bloody urine, leg pain and swelling, high blood pressure with severe headache, vision problems, rib pain, vomiting or nausea, and sudden swelling of the feet, hands, or face. Painful tummy cramps or leaking fluid may be a sign of preterm labor. It's important to monitor fetal movements regularly and seek medical attention if there is a decrease or change in movement pattern.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+8800000000000">9978651760</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                                <h3>St Joseph Engineering College</h3>
+                                <span>Vamanjoor, Mangaluru</span><br />
+                                <span>Karnataka, India</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com"
+                                >nurture@gmail.com</a
+                        </div>
+                    </address>
+                    <form action="#" method="post">
+                        <h1>Subscribe for our Newsletter</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email ID"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Phone Number"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Address"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        src="resources/img/scans/e7.JPG"
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+.layer6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.layer6 .contact_us {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    filter: invert(1);
+    color: white;
+}
+
+.info_container {
+    position: relative;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    box-shadow: 0 15px 35px green;
+    margin: 10px 0;
+}
+
+.info::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+.info i {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateZ(10px);
+    line-height: 40px;
+    background: linear-gradient(0deg, green, blue);
+    transition: 0.4s;
+}
+
+.info:hover i {
+    transform: translateZ(40px);
+    transition: 0.4s 0.1s;
+}
+
+.info a {
+    transform: translateZ(0px);
+    color: dodgerblue;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.info:hover a {
+    transform: translateZ(75px);
+    transition: 0.4s 0.2s;
+}
+
+.info .iname {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    transition: 0.4s;
+    color: #acacac;
+}
+
+.info:hover .iname {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h1 {
+    color: #ccc;
+    text-align: center;
+}
+
+form .inp_field {
+    position: relative;
+    width: 380px;
+    height: 65px;
+    border-radius: 100px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    box-shadow: 0 15px 35px green;
+}
+
+form .inp_field input {
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    outline: none;
+    overflow: visible;
+    color: #adadad;
+}
+
+.inp_field input::placeholder {
+    font-weight: 500;
+}
+
+.inp_field i {
+    color: #ababab;
+}
+
+.message {
+    width: 380px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    background: transparent;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    box-shadow: 0 15px 35px green;
+    color: #adadad;
+    font-weight: 500;
+    resize: vertical;
+}
+
+.submit {
+    position: relative;
+    font-size: 40px;
+    padding: 10px 15px;
+    margin: 30px 0;
+    margin-right: 270px;
+    outline: none;
+    border: none;
+    background: darkgreen;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    box-shadow: 0 15px 35px green;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.submit:hover {
+    letter-spacing: 3px;
+}
+
+.submit::before {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30px;
+    height: 30px;
+    background: green;
+    /* background: #b2302c; */
+    filter: blur(10px);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.submit::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: green;
+    transform: skew(45deg) translate(-20px, 0);
+    transition: 0.5s;
+}
+
+.submit:hover::after {
+    transform: skew(45deg) translate(200px, 0);
+    color: green;
+}
+
+.submit:hover::before {
+    height: 80%;
+    bottom: 0;
+    color: green;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.25s;
+}
+
+
+
+@media (max-width: 632px) {
+    .layer6 .contact_us {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
