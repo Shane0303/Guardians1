@@ -299,7 +299,7 @@ html {
     position: relative;
     width: 70%;
     height: 250px;
-    color: rgb(205, 50, 50);
+    color: rgb(125, 133, 226);
     border-radius: 15px;
     padding: 15px;
     box-shadow: inset 5px 5px 10px black, inset -3px -3px 5px #ffffff25;
@@ -330,7 +330,6 @@ html {
     font-size: 30px;
     border-radius: 50%;
     background: #267ff4;
-    /* color: white; */
     width: 50px;
     height: 50px;
     text-align: center;
@@ -348,16 +347,13 @@ html {
 .cover:last-child {
     margin-bottom: 100px;
 }
-
-/* MAIN CONTENT OF EXPERIENCE */
-/* MAIN CONTENT OF EDUCATION */
 .cover:nth-child(even) {
     text-align: right;
     color: yellowgreen;
 }
 
 .date {
-    color: crimson;
+    color: rgb(15, 1, 4);
     font-weight: bold;
 }
 

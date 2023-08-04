@@ -1,5 +1,5 @@
 .home {
-    background-color:rgb(152, 181, 234);
+    background-color:rgb(176, 196, 234);
     z-index: 2;
 }
 
@@ -65,7 +65,7 @@ button:hover {
 .content-for-home .img-container {
     width: 1350px;
     height: 850px;
-    background: url("resources\img\scans\childrennnnnnn.jpg");
+    background: url("resources\img\logo.jpg");
     background-position: center;
     background-size: cover;
     font-style: inherit;
@@ -76,7 +76,7 @@ button:hover {
 .content-for-home .img-container .logo {
     width: 50px;
     height: 50px;
-    background: url("resources\img\scans\childrennnnnnn.jpg");
+    background: url("resources\img\logo.jpg");
     background-position: top;
     background-position: center;
     background-size: cover;
