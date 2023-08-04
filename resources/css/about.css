@@ -31,7 +31,7 @@ html {
     left: 8%;
     width: 30px;
     height: 30px;
-    border: 5px solid #b105ca;
+    border: 5px solid #058fca;
     border-radius: 5px;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -83,7 +83,7 @@ html {
     align-items: center;
     min-height: 100vh;
     z-index: 100;
-    color: white;
+    color: rgb(56, 81, 173);
 }
 
 .wrapper .face {
@@ -132,7 +132,7 @@ html {
     margin: 10px 5px;
     padding: 15px 20px;
     font-size: 35px;
-    color: #ffffff;
+    color: #f7eaea;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -299,7 +299,7 @@ html {
     position: relative;
     width: 70%;
     height: 250px;
-    color: yellowgreen;
+    color: rgb(205, 50, 50);
     border-radius: 15px;
     padding: 15px;
     box-shadow: inset 5px 5px 10px black, inset -3px -3px 5px #ffffff25;

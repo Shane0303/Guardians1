@@ -15,7 +15,7 @@
     cursor: pointer;
     display: none;
     border-radius: 5px;
-    background:white;
+    background:rgb(249, 247, 247);
     transition: .5s ease-in-out;
 }
 
@@ -58,7 +58,7 @@
     transform: translate(-50%, -50%);
     width: 30px;
     border-radius: 10px;
-    background: white;
+    background: rgb(8, 7, 7);
     height: 6px;
     transition: 0.5s ease-in-out;
 }
