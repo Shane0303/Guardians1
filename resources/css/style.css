@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-    background: #a640f5;
+    background: #9e5a06;
 }
 
 p, a, h1, h2, h3, h4, h5, h6, article {
@@ -31,7 +31,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #9900ba;
+    background: #8592d6;
     border-radius: 44px;
     z-index: 1000;
 }
@@ -48,7 +48,7 @@ a {
     background:white;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 5px 0 5px rgb(216, 15, 196), 10px 0 10px rgb(216, 71, 216);
+    box-shadow: 5px 0 5px rgb(17, 33, 114), 10px 0 10px rgb(22, 49, 127);
     z-index: 999;
     transition: .5s ease-in-out;
 }
@@ -63,7 +63,7 @@ a {
     text-transform: uppercase;
     padding: 15px;
     cursor: pointer;
-    color:rgb(216, 71, 216);
+    color:rgb(58, 19, 106);
 }
 
 .navigation h1::before,
@@ -72,7 +72,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background:rgb(216, 71, 216);
+    background:rgb(71, 177, 216);
     width: 5px;
     height: 25px;
 }
@@ -90,7 +90,7 @@ a {
     left: 0;
     width: 200%;
     height: 5px;
-    background:rgb(216, 71, 216);
+    background:rgb(68, 106, 160);
 }
 
 .navigation h1 div:nth-child(2) {
@@ -124,7 +124,7 @@ a {
     z-index: 1;
     display: block;
     padding: 15px 30px;
-    background:rgb(216, 71, 216);
+    background:rgb(162, 211, 212);
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
@@ -141,7 +141,7 @@ a {
     left: -100%;
     width: 100%;
     height: 50%;
-    background:pink;
+    background:rgb(82, 144, 236);
     z-index: -1;
     transition: 0.5s ease-in-out;
 }
@@ -167,7 +167,7 @@ a {
     
     color:rgb(236, 226, 236);
     align-items: center;
-    background-color: rgb(216, 71, 216);
+    background-color: rgb(14, 111, 118);
 }
 .container {
     position: relative;
@@ -187,7 +187,7 @@ a {
     margin-left: 100%;
     overflow-x: hidden;
     transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    box-shadow: 0 0 5px rgba(237, 232, 232, 0.5),
+    box-shadow: 0 0 5px rgba(147, 126, 126, 0.5),
         0 0 10px rgba(231, 225, 225, 0.5),
         0 0 20px rgba(239, 236, 236, 0.5);
 }
