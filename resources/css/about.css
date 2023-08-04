@@ -14,7 +14,7 @@ html {
     position: absolute;
     width: 100%;
     min-height: 100vh;
-    background-image: url("resources/img/scans/istockphoto-165972503-1024x1024 (1).jpg"); 
+    background-image: url("resources\img\p1.jpg"); 
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -116,7 +116,7 @@ html {
 .wrapper .face.face2 {
     width: 1000px;
     height: 500px;
-    background: url("resources/img/scans/istockphoto-165972503-1024x1024 (1).jpg");
+    background: url("resources\img\p1.jpg");
     background-position: center;
     background-size: cover;
 }
