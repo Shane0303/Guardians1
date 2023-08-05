@@ -165,7 +165,7 @@
     height: 300px;
     line-height: 300px;
     font-size: 5em;
-    background: url("../img/elements/border.png") no-repeat center center;
+    background: url("resources\img\p1.jpg") no-repeat center center;
     -webkit-text-stroke: 1px aqua;
 }
 
@@ -517,7 +517,7 @@ ARROW (DISABLE) */
         height: 300px;
         line-height: 300px;
         font-size: 3em;
-        background: url("../img/elements/border.png") no-repeat center center;
+        background: url("resources\img\p1.jpg") no-repeat center center;
         -webkit-text-stroke: 1px aqua;
     }
 }

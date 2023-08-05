@@ -14,7 +14,7 @@ html {
     position: absolute;
     width: 100%;
     min-height: 100vh;
-    background-image: url("resources/img/scans/istockphoto-165972503-1024x1024 (1).jpg"); 
+    background-image: url("resources\img\p1.jpg"); 
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -31,7 +31,7 @@ html {
     left: 8%;
     width: 30px;
     height: 30px;
-    border: 5px solid #b105ca;
+    border: 5px solid #058fca;
     border-radius: 5px;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -83,7 +83,7 @@ html {
     align-items: center;
     min-height: 100vh;
     z-index: 100;
-    color: white;
+    color: rgb(56, 81, 173);
 }
 
 .wrapper .face {
@@ -116,7 +116,7 @@ html {
 .wrapper .face.face2 {
     width: 1000px;
     height: 500px;
-    background: url("resources/img/scans/istockphoto-165972503-1024x1024 (1).jpg");
+    background: url("resources\img\p1.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -132,7 +132,7 @@ html {
     margin: 10px 5px;
     padding: 15px 20px;
     font-size: 35px;
-    color: #ffffff;
+    color: #f7eaea;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -299,7 +299,7 @@ html {
     position: relative;
     width: 70%;
     height: 250px;
-    color: yellowgreen;
+    color: rgb(125, 133, 226);
     border-radius: 15px;
     padding: 15px;
     box-shadow: inset 5px 5px 10px black, inset -3px -3px 5px #ffffff25;
@@ -330,7 +330,6 @@ html {
     font-size: 30px;
     border-radius: 50%;
     background: #267ff4;
-    /* color: white; */
     width: 50px;
     height: 50px;
     text-align: center;
@@ -348,16 +347,13 @@ html {
 .cover:last-child {
     margin-bottom: 100px;
 }
-
-/* MAIN CONTENT OF EXPERIENCE */
-/* MAIN CONTENT OF EDUCATION */
 .cover:nth-child(even) {
     text-align: right;
     color: yellowgreen;
 }
 
 .date {
-    color: crimson;
+    color: rgb(15, 1, 4);
     font-weight: bold;
 }
 
