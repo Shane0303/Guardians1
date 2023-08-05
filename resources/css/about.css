@@ -10,16 +10,7 @@ html {
         "Trebuchet MS", sans-serif;       
 }
 
-.styling {
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("resources\img\p1.jpg"); 
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
+
 
 .absolute {
     
@@ -72,7 +63,7 @@ html {
     }
 
     100% {
-        fill: #43ea43;
+        fill: #439cea;
     }
 }
 
@@ -113,13 +104,7 @@ html {
     font-size: 20px;
 }
 
-.wrapper .face.face2 {
-    width: 1000px;
-    height: 500px;
-    background: url("resources\img\p1.jpg");
-    background-position: center;
-    background-size: cover;
-}
+
 
 .face.face1 h1 span,
 .face.face1 p span {
