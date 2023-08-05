@@ -105,7 +105,18 @@
                           <h3 style="color: rgb(247, 244, 244);">&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWant to know your child's dsylexia level? </h3>  
                           <h5 style="color: rgb(63, 133, 231)"> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use our Dyslexic Level Predictor to find out</h5>
                           
-                          <button style="background-color:rgb(38, 126, 213); /* Green */border: none;color: white;padding: 12px 24px;text-align: center; text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px;cursor: pointer;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)" onclick="location.href='http://127.0.0.1:5000';">Check here</button>
+                          <button id="startButton">Start Quiz</button>
+
+    <script>
+        const startButton = document.getElementById("startButton");
+        startButton.addEventListener("click", function () {
+            navigateToQuizPage(); // Call the function to navigate
+        });
+
+        function navigateToQuizPage() {
+            window.location.href = "./quiz.html"; // Redirect to the quiz page
+        }
+    </script>
                 
                         </div>
                         <div class="side-nav">
@@ -453,24 +464,33 @@
                     <nav class="about_nav padding_top">
                         <ul>
                             <li>
+                                <a class="filter" href="#" data-filter=".des"
+                                    >High</a
+                                >
+                            </li>
+                            <li>
                                 <a class="filter" href="#" data-filter=".web"
-                                    >High Dyslexia</a
+                                    >Average</a
                                 >
                             </li>
                             <li>
                                 <a class="filter" href="#" data-filter=".logo"
-                                    >Low Dyslexia</a
+                                    >Low</a
                                 >
                             </li>
                             <li>
                                 <a class="filter" href="#" data-filter=".card"
-                                    >Activies</a
+                                    >Activities</a
 
                                 >
                             </li>
                         </ul>
                     </nav>
                     <div class="mymixcont">
+                        <div class="mix des">
+                            <video width="220" height="180" controls autoplay>  
+                                <source src="resources\img\scans\a vedio.mp4" type="video/mp4">  
+                        </div>
                         <div class="mix web">
                             <img
                                 src="resources\img\scans\A.JPG"
@@ -898,7 +918,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                </span>
@@ -909,7 +929,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                                 </span>
@@ -919,7 +939,7 @@
                                 src=resources\img\scans\IMG-0452.JPG
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                 <br>
                                 </span>
@@ -930,7 +950,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                  </span>
@@ -941,7 +961,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                                </span>
@@ -953,7 +973,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                  <br>
                                   </span>
@@ -966,7 +986,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"> 
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                               <br>
@@ -979,7 +999,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                </span>
@@ -990,7 +1010,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                 </span>
@@ -1001,7 +1021,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                 <br>
                                 </span>
@@ -1012,7 +1032,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                 <br>
                                 </span>
@@ -1023,7 +1043,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                 <br>
                                </span>
@@ -1034,7 +1054,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                                 <D/span>
@@ -1045,7 +1065,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                 </span>
@@ -1056,7 +1076,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                </span>
@@ -1067,7 +1087,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                                 </span>
@@ -1078,7 +1098,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                <br>
                                 </span>
@@ -1089,7 +1109,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                <br>
                                </span>
@@ -1100,7 +1120,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                 <br>
                             </span>
@@ -1111,7 +1131,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                 <br>
                                 <br>
                                 </span>
@@ -1122,7 +1142,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link">
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                                <br>
                                <br>
                                </span>
@@ -1133,7 +1153,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1141,7 +1161,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1149,7 +1169,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1157,7 +1177,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1165,7 +1185,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1173,14 +1193,14 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
                                 src=resources\img\scans\IMG-0604.JPG
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1188,7 +1208,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                         <div class="mix card">
                             <img
@@ -1196,7 +1216,7 @@
                                 alt=""
                             />
                             <span class="title"></span>
-                            <span class="port_link"></span>
+                            <span class="port_link"><button button type="button" onclick="alert('Ready to Print')">Print</button></span>
                         </div>
                     </div>
                 </div>
