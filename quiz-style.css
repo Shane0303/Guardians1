@@ -35,7 +35,8 @@ h1 {
     margin-left: 5px;
 }
 
-#submitButton {
+/* Submit button styles */
+.submit-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -51,9 +52,15 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-#submitButton:hover {
+.submit-button:hover {
     background-color: #0056b3;
 }
+
+/* Dark blue theme */
+/* ... Previous styles ... */
+
+/* Light blue theme */
+/* ... Previous styles ... */
 
 /* Dark blue theme */
 body.dark-blue-theme {
@@ -92,3 +99,5 @@ body.light-blue-theme {
 .light-blue-theme #submitButton:hover {
     background-color: #0056b3;
 }
+
+
