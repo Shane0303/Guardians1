@@ -105,7 +105,18 @@
                           <h3 style="color: rgb(247, 244, 244);">&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWant to know your child's dsylexia level? </h3>  
                           <h5 style="color: rgb(63, 133, 231)"> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Use our Dyslexic Level Predictor to find out</h5>
                           
-                          <button style="background-color:rgb(38, 126, 213); /* Green */border: none;color: white;padding: 12px 24px;text-align: center; text-decoration: none;display: inline-block;font-size: 16px;border-radius: 10px;cursor: pointer;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)" onclick="location.href='http://127.0.0.1:5000';">Check here</button>
+                          <button id="startButton">Start Quiz</button>
+
+    <script>
+        const startButton = document.getElementById("startButton");
+        startButton.addEventListener("click", function () {
+            navigateToQuizPage(); // Call the function to navigate
+        });
+
+        function navigateToQuizPage() {
+            window.location.href = "./quiz.html"; // Redirect to the quiz page
+        }
+    </script>
                 
                         </div>
                         <div class="side-nav">

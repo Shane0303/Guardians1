@@ -1,0 +1,94 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Quiz form styles */
+#quizContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#quizContainer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#quizContainer input[type="radio"] {
+    margin-right: 10px;
+}
+
+#quizContainer label {
+    margin-left: 5px;
+}
+
+#submitButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#submitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Dark blue theme */
+body.dark-blue-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-blue-theme #quizContainer {
+    background-color: #333;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.dark-blue-theme #submitButton {
+    background-color: #007bff;
+}
+
+.dark-blue-theme #submitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Light blue theme */
+body.light-blue-theme {
+    background-color: #f0f5ff;
+    color: #333;
+}
+
+.light-blue-theme #quizContainer {
+    background-color: #f0f0ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.light-blue-theme #submitButton {
+    background-color: #007bff;
+}
+
+.light-blue-theme #submitButton:hover {
+    background-color: #0056b3;
+}
