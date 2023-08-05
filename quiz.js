@@ -1,29 +1,76 @@
 // Define the quiz questions and options
 const questions = [
     {
-        question: "Question 1: Which color do you prefer?",
-        options: ["Red", "Blue", "Green", "Yellow"]
+        question: "Question 1: What does the word 'cat' spell backwards?",
+        options: ["tac", "act", "cta", "tca"],
+        values: [1, 0, 0, 0]
     },
-    // Add more questions here...
     {
-        question: "Question 10: Which season do you like the most?",
-        options: ["Spring", "Summer", "Autumn", "Winter"]
+        question: "Question 2: Identify the word that does not rhyme with 'bat'",
+        options: ["mat", "cat", "rat", "dog"],
+        values: [0, 0, 0, 1]
+    },
+    {
+        question: "Question 3: What is the first letter of the word 'elephant'?",
+        options: ["L", "E", "P", "H"],
+        values: [0, 1, 0, 0]
+    },
+    {
+        question: "Question 4: Which number comes next in the sequence? 2, 4, 6, 8, __",
+        options: ["10", "9", "12", "14"],
+        values: [1, 0, 0, 0]
+    },
+    {
+        question: "Question 5: Which word is spelled correctly?",
+        options: ["Acces", "Acess", "Access", "Accsess"],
+        values: [0, 0, 1, 0]
+    },
+    {
+        question: "Question 6: Identify the correctly spelled number:",
+        options: ["Twelwe", "Twelve", "Twelv", "Twelfe"],
+        values: [0, 1, 0, 0]
+    },
+    {
+        question: "Which word means the opposite of 'small'?",
+        options: ["Little", "Tiny", "Big", "Miniature"],
+        values: [0, 0, 1, 0]
+    },
+    {
+        question: "Question 8: Choose the correctly spelled color:",
+        options: ["Rred", "Greeen", "Blluee", "Yellow"],
+        values: [0, 0, 0, 1]
+    },
+    {
+        question: "Question 9: Arrange the letters to form a meaningful word: R E A D",
+        options: ["DAER", "DERA", "ARDE", "DEAR"],
+        values: [0, 0, 0, 1]
+    },
+    {
+        question: "Question 10: What is the missing letter in the sequence? A, C, E, G, __, K?",
+        options: ["F", "I", "J", "H"],
+        values: [0, 1, 0, 0]
     }
 ];
 
 // Define the categories based on the answer ranges
 const categories = [
-    { name: "Category 1", range: [0, 20] },
-    { name: "Category 2", range: [21, 50] },
-    { name: "Category 3", range: [51, 100] }
+    { name: "High Dyslexia", range: [0, 3] },
+    { name: "Average Dyslexia", range: [4, 6] },
+    { name: "Low Dyslexia", range: [7, 10] }
 ];
 
 let userAnswers = [];
 
 // Function to display the questions and options
+// Function to display the questions and options
 function displayQuizQuestions() {
     const quizContainer = document.getElementById("quizContainer");
     quizContainer.innerHTML = ""; // Clear previous content
+
+    // Add the heading element
+    const headingElement = document.createElement("h2");
+    headingElement.innerText = "Test for Dyslexia";
+    quizContainer.appendChild(headingElement);
 
     questions.forEach((q, index) => {
         const questionElement = document.createElement("div");
@@ -49,8 +96,10 @@ function displayQuizQuestions() {
         quizContainer.appendChild(questionElement);
     });
 
+    // Create and append the submit button dynamically
     const submitButton = document.createElement("button");
     submitButton.innerText = "Submit";
+    submitButton.classList.add("submit-button"); // Add the "submit-button" class
     submitButton.addEventListener("click", calculateResult);
     quizContainer.appendChild(submitButton);
 }
@@ -77,7 +126,7 @@ function calculateResult(event) {
         userAnswers.push(parseInt(selectedOption));
     });
 
-    const totalScore = userAnswers.reduce((acc, cur) => acc + cur, 0);
+    const totalScore = userAnswers.reduce((acc, cur, index) => acc + questions[index].values[cur], 0);
     let resultCategory = "Unknown";
 
     // Determine the result category based on the total score
